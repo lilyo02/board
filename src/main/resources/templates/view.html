@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="" >
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <title>2016 굿모닝 경기 소통 크리에이터 공모전</title>
+    <link rel="stylesheet" type="text/css" href="../css/general.css" >
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script src="../js/layout.js"></script>
+    <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div id="wrap">
+    <!-- @ CONTAINER -->
+    <section id="container" class="sub">
+        <!-- @ CONTENTS -->
+        <div id="contents">
+            <!-- @ SUB TITLE AREA -->
+            <div class="sub-title-area">
+                <h2 class="tit">News & Info 
+            </div>
+            <div class="write_title" th:text="${board.title}">
+            </div>
+            <div class="write_date">
+                <span class="write_line"><strong>작성자  :</strong>
+					<span th:text="${board.writer}"></span></span>
+                <span class="write_line"><strong>조회수  :</strong>
+					<span th:text="${board.viewCount}"></span></span>
+                <span class="write_line" th:text="${#temporals.format(board.createdAt, 'yyyy.MM.dd HH:mm')}"></span>
+                <span><em class="file_icon"></em><a th:href="@{/board/download(id=${board.id})}" th:text="${board.originalFileName}"></a></span>
+
+            </div>
+            <div class="con_box" th:text="${board.content}">
+            </div>
+
+            <div class="btn_area">
+                <a th:href="@{/board/list}" class="btn_blue">목록</a>
+				<form th:action="@{/board/update}" method="get" style="display:inline;">
+					<input type="hidden" name="id" th:value="${board.id}">
+					<button type="submit" class="btn_blue">수정</button>
+				</form>
+				<form th:action="@{/board/delete}" method="post" style="display:inline;">
+					<input type="hidden" name="id" th:value="${board.id}">
+					<button type="submit" class="btn_blue">삭제</button>
+				</form> 
+            </div>
+        </div>
+        <!-- CONTENTS @ -->
+    </section>
+    <!-- CONTAINER @ -->
+</div>
+</body>
+</html>

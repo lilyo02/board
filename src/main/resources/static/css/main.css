@@ -1,0 +1,109 @@
+
+/* main */
+
+.main-video-area {text-align:center;}
+.main-video-area p {color:#000;font-size:20px;margin:70px 0;}
+.main-video-area p span {display:inline-block;background:#f7941e;color:#fff;}
+.main-video-area div.video {width:850px;height:480px;border:6px solid #818181;display:inline-block;}
+.main-video-area div.video iframe {width:100%;height:100%;}
+.news-sns-area {margin-top:80px;text-align:center;}
+.news-sns-area > div {display:inline-block;text-align:left;vertical-align:top;}
+.news-sns-area div.news {}
+.news-sns-area div.news > p.tit {font-size:30px;font-weight:bold;color:#000;line-height: 1;}
+.news-sns-area div.news div.news-wrap {margin:15px 0 35px;}
+.news-sns-area div.news div.news-wrap > div {display:inline-block;vertical-align:top;}
+.news-sns-area div.news div.news-wrap div.date {}
+.news-sns-area div.news div.news-wrap div.date span {display:block;}
+.news-sns-area div.news div.news-wrap div.date span.day {font-size:30px;color:#b4b4b4;font-weight:bold;height: 30px;line-height: 30px;}
+.news-sns-area div.news div.news-wrap div.date span.year {font-size:16px;color:#b4b4b4;}
+.news-sns-area div.news div.news-wrap div.cont {width:380px;padding-left:40px;position:relative;}
+.news-sns-area div.news div.news-wrap div.cont p.tit {font-size:20px;color:#1e1e1e;}
+.news-sns-area div.news div.news-wrap div.cont p.brief{box-sizing: border-box; width:335px;font-size:13px;color:#787878;padding-right:42px;background:url("../images/main/ico_go2.png") right bottom no-repeat;}
+.news-sns-area div.sns {width:500px;margin-left:50px;}
+.news-sns-area div.sns > p.tit {height: 36px;}
+.news-sns-area div.sns > p.tit span.fabook {display:inline-block;width:36px;height:36px;background:url("../images/main/ico_fabook.png") center no-repeat;background-size:100% 100%;}
+.news-sns-area div.sns div.sns-wrap {margin:12px 0 35px;border:1px solid #ddd;height:230px;}
+.main #contents a.view-detail-btn {display:inline-block;margin-top:40px;background:#f7941e;color:#fff;font-size:20px;letter-spacing:3px;width:625px;height:55px;line-height:55px;border:1px solid #01929b; }
+.main #contents a.view-detail-btn img {padding:26px 0 0 10px;}
+
+
+/*only pc*/
+
+
+/*tablet1*/
+@media all and (min-width:1024px) and (max-width:1279px){
+
+    .main-video-area p {font-size:17px;margin:60px 0;}
+    .main-video-area div.video {width:722px;height:408px;border:4px solid #818181;}
+
+.news-sns-area {margin: 70px 0 0;}
+.news-sns-area div.news > p.tit {font-size:25px;}
+.news-sns-area div.news div.news-wrap {margin:13px 0 30px;}
+.news-sns-area div.news div.news-wrap div.date span.day {font-size:25px;height: 25px;line-height: 25px;}
+.news-sns-area div.news div.news-wrap div.date span.year {font-size:13px;}
+.news-sns-area div.news div.news-wrap div.cont {width:323px;padding-left:34px;}
+.news-sns-area div.news div.news-wrap div.cont p.tit {font-size:17px;}
+.news-sns-area div.news div.news-wrap div.cont p.sub {width:285px;font-size:11px;padding-right:36px;}
+.news-sns-area div.sns {width:425px;}
+.news-sns-area div.sns > p.tit {height: 30px;}
+.news-sns-area div.sns > p.tit span.fabook {width:30px;height:30px;}
+.news-sns-area div.sns div.sns-wrap {margin:12px 0 30px;height:200px;}
+.main #contents a.view-detail-btn {margin-top:34px;font-size:17px;width:531px;height:46px;line-height:46px;}
+.main #contents a.view-detail-btn img {padding:23px 0 0 10px;width:35px;}
+
+}
+
+/*tablet2*/
+@media all and (min-width:768px) and (max-width:1023px){
+    /* main */
+    .main-video-area p {font-size:14px;margin:50px 0;}
+    .main-video-area div.video {width:595px;height:336px;border:3px solid #818181;}
+    .news-sns-area {margin: 50px 0 0;}
+    .news-sns-area div.news div.news-wrap {margin:10px 0 24px;}
+    .news-sns-area div.news div.news-wrap div.date span.day {height: 21px;line-height: 21px;}
+    .news-sns-area div.news div.news-wrap div.cont {width:266px;padding-left:28px;}
+    .news-sns-area div.news div.news-wrap div.cont p.tit {font-size:14px;}
+    .news-sns-area div.news div.news-wrap div.cont p.brief {width:266px;font-size:10px;padding-right:29px;background: url("../images/main/ico_go2.png") right bottom no-repeat;background-size:29px 4px;}
+    .news-sns-area div.sns {width:350px;margin-left: 35px;}
+    .news-sns-area div.sns > p.tit {height: 30px;}
+    .news-sns-area div.sns > p.tit span.fabook {width:25px;height:25px;}
+    .news-sns-area div.sns div.sns-wrap {margin:12px 0 24px;height:166px;}
+    .main #contents a.view-detail-btn {margin-top:28px;font-size:14px;width:437px;height:38px;line-height:38px;}
+    .main #contents a.view-detail-btn img {padding:19px 0 0 7px;width:29px;}
+}
+
+
+/*mobile*/
+@media all and (max-width:767px){
+    #contents {padding:0 10px;}
+    .news-sns-area{margin-top: 30px;text-align: center;}
+    .main-video-area p {font-size:14px;margin:50px 0;}
+    .main-video-area div.video {height:240px;border:3px solid #818181;box-sizing:border-box;}
+
+.main-video-area p {font-size:14px;margin:50px 0;}
+.main-video-area div.video {width:100%;height:240px;border:3px solid #818181;box-sizing:border-box;}
+.news-sns-area {margin: 40px 0 0;}
+.news-sns-area div.news {display:block;margin:auto;width: 415px;}
+.news-sns-area div.news > p.tit {font-size:21px;}
+.news-sns-area div.news div.news-wrap {margin:7px 0 17px;}
+.news-sns-area div.news div.news-wrap div.date span.day {font-size:21px;height: 21px;line-height: 21px;}
+.news-sns-area div.news div.news-wrap div.date span.year {font-size:11px;}
+.news-sns-area div.news div.news-wrap div.cont {width:220px;padding-left:20px;}
+.news-sns-area div.news div.news-wrap div.cont p.tit {font-size:14px;}
+.news-sns-area div.news div.news-wrap div.cont p.sub {width: 196px;font-size: 10px;padding-right: 24px;background: url("../images/main/ico_go2.png") right bottom no-repeat;background-size: 24px auto;}
+.news-sns-area div.sns {width:90%;margin:auto;float:none;display:block;}
+.news-sns-area div.sns > p.tit {height: 30px;}
+.news-sns-area div.sns > p.tit span.fabook {width:25px;height:25px;}
+.news-sns-area div.sns div.sns-wrap {margin:12px 0 24px;height:250px;}
+.main #contents a.view-detail-btn {margin-top:20px;font-size:13px;width:312px;height:38px;line-height:38px;}
+.main #contents a.view-detail-btn img {padding:19px 0 0 7px;width:29px;}
+
+}
+
+@media all and (max-width:480px){
+    #contents {padding:0 10px;}
+    .news-sns-area {margin: 40px 0 0;}
+    .news-sns-area div.news {width: 300px;}
+    .news-sns-area div.news div.news-wrap div.cont p.brief{width: 100%;background: url("../images/main/ico_go2.png") right bottom no-repeat;background-size: 24px auto;}
+
+}
